@@ -1,0 +1,16 @@
+int MotorControl = 5;    // Arduino Pin to control the motor
+
+// the setup routine runs once when you press reset:
+void setup()  { 
+  // declare pin 5 to be an output:
+  pinMode(MotorControl, OUTPUT);
+} 
+
+// the loop routine runs over and over again forever:
+void loop()  { 
+  digitalWrite(MotorControl,HIGH);// NO3 and COM3 Connected;
+  delay(1000);
+  digitalWrite(MotorControl,LOW);// NO3 and COM3 Disconnected;
+  delay(1000);
+                         
+}
